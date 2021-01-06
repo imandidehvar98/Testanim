@@ -1,0 +1,339 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: #cecece;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: #cecece07;
+}
+
+
+.logo {
+  margin-left: 16px;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  animation: animate 2s linear infinite;
+}
+
+.logo span:nth-child(1) {
+  animation-delay: 0.10s;
+}
+
+.logo span:nth-child(2) {
+  animation-delay: 0.20s;
+}
+
+.logo span:nth-child(3) {
+  animation-delay: 0.30s;
+}
+
+.logo span:nth-child(4) {
+  animation-delay: 0.40s;
+}
+
+.logo span:nth-child(5) {
+  animation-delay: 0.50s;
+}
+
+.logo span:nth-child(6) {
+  animation-delay: 0.60s;
+}
+
+.logo span:nth-child(7) {
+  animation-delay: 0.70s;
+}
+
+.logo span:nth-child(8) {
+  animation-delay: 0.80s;
+}
+
+.logo span:nth-child(9) {
+  animation-delay: 0.90s;
+}
+
+.logo span:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.logo span:nth-child(11) {
+  animation-delay: 1.10s;
+}
+
+.logo span:nth-child(12) {
+  animation-delay: 1.20s;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    color: rgb(226, 224, 153);
+    /* filter: blur(2px); */
+    /* text-shadow: 0 0 10px #00b3ff,
+                0 0 20px #00b3ff,
+                0 0 40px #00b3ff,
+                0 0 80px #00b3ff,
+                0 0 120px #00b3ff,
+                0 0 200px #00b3ff,
+                0 0 300px #00b3ff,
+                0 0 400px #00b3ff; */
+  }
+
+  5%,
+  95% {
+    color: #cecece;
+    /* filter: blur(2px); */
+  }
+
+
+}
+
+.menu {
+  width: 30vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li {
+  text-decoration: none;
+  list-style: none;
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.selected::before {
+  width: 4px;
+  height: 100%;
+  border-radius: 5px;
+  content: '';
+  background-color: blue;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.content {
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.circle {
+  background-image: url(clock.svg);
+  background-size: contain;
+  position: relative;
+  width: 430px;
+  height: 430px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: flex;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+}
+
+.circle3 {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid #6c6cff;
+  display: flex;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+}
+
+.circle4 {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  margin: auto;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #101082;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+}
+
+.circle5 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  border-radius: 50%;
+  border: 5px solid #101082;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+}
+
+.circle6 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px dashed #101082;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+}
+
+
+
+
+
+.circle2 {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 15px;
+  border: 5px dotted #ffffff6c;
+  animation-name: rotate-s-loader-r;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+}
+
+
+
+.items li {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: white;
+  list-style-type: none;
+  text-align: center;
+  font: 20px/50px Helvetica, Arial, sans-serif;
+  cursor: text;
+}
+
+.items li:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.items li:nth-child(2) {
+  top: 0px;
+  left: 0px;
+
+}
+
+.items li:nth-child(3) {
+  top: 0px;
+  left: 0px;
+}
+
+.bg {
+  position: absolute;
+}
+
+.path {
+  animation: draw 20s linear infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+/* @keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-s-loader-r {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+} */
+
+
+.data {
+  position: relative;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.graph__wrapper {
+  width: 400px;
+  margin: 30px auto;
+  position: relative;
+  direction: rtl;
+}
+.graph__wrapper svg {
+  position: absolute;
+  margin: 36px 0px 0px 15px;
+}
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s ease-in forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.description {
+  font-family: "Roboto";
+  color: #b0b0b0;
+  text-align: center;
+  margin: 40px 0px;
+}

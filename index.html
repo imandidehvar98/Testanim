@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1 class="logo">
+            <span>I</span>
+            <span>M</span>
+            <span>A</span>
+            <span>N</span>
+            <span> </span>
+            <span>D</span>
+            <span>I</span>
+            <span>D</span>
+            <span>E</span>
+            <span>H</span>
+            <span>V</span>
+            <span>A</span>
+            <span>R</span>
+        </h1>
+
+    </div>
+
+    <div class="container">
+
+        <ul class="menu">
+            <li class="selected" onclick="changeSelection(0)">
+                <div>
+                    <div style="display: flex; flex-direction: row; justify-content: left; align-items: center;">
+                        <h3>Sport</h3>
+                        <svg width="30px" height="30px" style="margin-left: 10px;">
+                            <rect width="30" height="5" style="fill:blue;" rx="2" y="0">
+                                <animate attributeName="width" values="30; 10; 30" dur="3s" repeatCount="indefinite">
+                                </animate>
+                            </rect>
+                            <rect width="30" height="5" style="fill:blue;" rx="2" y="10">
+                                <animate attributeName="width" values="30; 15; 30" dur="2s" repeatCount="indefinite">
+                                </animate>
+                            </rect>
+                            <rect width="30" height="5" style="fill:blue;" rx="2" y="20">
+                                <animate attributeName="width" values="5; 15; 5" dur="2" repeatCount="indefinite">
+                                </animate>
+                            </rect>
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                    </div>
+                    <span>Fitness & health tracking</span>
+                </div>
+            </li>
+            <li class="" onclick="changeSelection(1)">
+                <div>
+                    <h3>Sport</h3>
+                    <span>Fitness & health tracking</span>
+                </div>
+            </li>
+            <li class="" onclick="changeSelection(2)">
+                <div>
+                    <h3>Sport</h3>
+                    <span>Fitness & health tracking</span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="content">
+
+            <div>
+
+                <div class="circle2">
+                    <div class="circle">
+                        <div class="circle3">
+                            <div class="circle4">
+                                <div class="circle5">
+                                    <div class="circle6">
+                                        <div class="data"><p>salam</p></div>
+                                        <ul class="items">
+                                            <li id="item1">1</li>
+                                            <li id="item2">2</li>
+                                            <li id="item3">3</li>
+                                        </ul>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="animateplus.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script> -->
+    <script>
+
+        // var canvas = document.getElementById("canvas");
+        // var ctx = canvas.getContext("2d");
+        // var radius = canvas.height / 2;
+        // ctx.translate(radius, radius);
+        // radius = radius * 0.90
+        // drawClock();
+
+        // function drawClock() {
+        //     ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+        //     ctx.fillStyle = "white";
+        //     ctx.fill();
+        //     drawHand(ctx, 0,10,10);
+        // }
+
+
+        // function drawHand(ctx, pos, length, width) {
+        //     ctx.beginPath();
+        //     ctx.arc(155, 50, 40, 0, 2 * Math.PI);
+        //     ctx.stroke();
+        // }
+    </script>
+</body>
+
+</html>
