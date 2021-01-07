@@ -322,7 +322,7 @@ body {
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: dash 3s ease-in forwards;
+  animation: dash 1s ease-in forwards;
   animation-iteration-count: 1;
   animation-delay: 1s;
 }

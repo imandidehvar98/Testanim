@@ -27,6 +27,7 @@ function changeSelection(i) {
         if (s == i){
             $(".menu").children().eq(index).addClass("selected");
             changeData(i)
+            test(i)
             selected = s
         }
         else
@@ -35,14 +36,43 @@ function changeSelection(i) {
     });
 }
 
+function test(i) {
+    console.log(i)
+    if(i == 0) {
+        $(".circle").css({transform: 'rotate(0deg)'})
+        $('.data').css({transform: 'rotate(0deg)'})
+
+        $("#item1").css({transform: 'scale(1.5)'})
+        $("#item2").css({transform: 'scale(1)'})
+        $("#item3").css({transform: 'scale(1)'})
+    }
+    else if(i == 1) {
+        $(".circle").css({transform: 'rotate(-120deg)'})
+        $('.data').css({transform: 'rotate(120deg)'})
+
+        $("#item1").css({transform: 'scale(1) rotate(120deg)'})
+        $("#item2").css({transform: 'scale(1.5) rotate(120deg)'})
+        $("#item3").css({transform: 'scale(1) rotate(120deg)'})
+
+    }
+    else if(i == 2){
+        $(".circle").css({transform: 'rotate(+120deg)'})
+        $(".data").css({transform: 'rotate(-120deg)'})
+        
+        $("#item1").css({transform: 'scale(1) rotate(-120deg)'})
+        $("#item2").css({transform: 'scale(1) rotate(-120deg)'})
+        $("#item3").css({transform: 'scale(1.5) rotate(-120deg)'})
+    }
+}
+
 function changeData(i) {
     if(i == 0) {
         $(".data").html(`
         
-        <svg width="110px" height="70px" viewBox="0 0 315 107" version="1.1">
+        <svg width="170px" height="70px" viewBox="0 0 315 107" version="1.1">
 
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-            <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-1" stroke="white" stroke-width="4" sketch:type="MSShapeGroup" class="path"></path>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none">
+            <path d="M2.10546875,95.75 L40.5546875,68.3476562 L55.2109375,81.1796875 L65.2148437,76.3945312 L96.1835937,86.8320312 L131.023438,19.9414062 L142.15625,23.7226562 L183.605469,2.1953125 L211.007812,22.3320312 L234.320312,71.5664062 L234.667969,83.0039062 L244.019531,83.0039062 L247.105469,88.8320312 L312.695312,104.839844" id="Path-1" stroke="white" stroke-width="4" class="path"></path>
         </g>
     </svg>
 
@@ -70,15 +100,19 @@ $(document).ready(function () {
     $("#item1").css(pos1)
     $("#item2").css(pos2)
     $("#item3").css(pos3)
-    changeData(selected)
+    changeSelection(selected)
 
     $("#item1").on('click', function () {
         // $("#item1").css(pos1)
         // $("#item2").css(pos2)
         // $("#item3").css(pos3)
         changeSelection(0)
-        $(".circle").css({transform: 'rotate(0deg)'})
-        $('.data').css({transform: 'rotate(0deg)'})
+        // $(".circle").css({transform: 'rotate(0deg)'})
+        // $('.data').css({transform: 'rotate(0deg)'})
+
+        // $("#item1").css({transform: 'scale(1.5)'})
+        // $("#item2").css({transform: 'scale(1)'})
+        // $("#item3").css({transform: 'scale(1)'})
 
     })
 
@@ -88,10 +122,12 @@ $(document).ready(function () {
         // $("#item2").css(pos1)
         // $("#item3").css(pos3)
         changeSelection(1)
-        $(".circle").css({transform: 'rotate(-120deg)'})
-        $('#item2').css({transform: 'rotate(120deg)'})
-        $('.data').css({transform: 'rotate(120deg)'})
+        // $(".circle").css({transform: 'rotate(-120deg)'})
+        // $('.data').css({transform: 'rotate(120deg)'})
 
+        // $("#item1").css({transform: 'scale(1)'})
+        // $("#item2").css({transform: 'scale(1.5) rotate(120deg)'})
+        // $("#item3").css({transform: 'scale(1)'})
     })
 
 
@@ -100,9 +136,12 @@ $(document).ready(function () {
         // $("#item2").css(pos2)
         // $("#item3").css(pos1)
         changeSelection(2)
-        $(".circle").css({transform: 'rotate(+120deg)'})
-        $("#item3").css({transform: 'rotate(-120deg)'})
-        $(".data").css({transform: 'rotate(-120deg)'})
+        // $(".circle").css({transform: 'rotate(+120deg)'})
+        // $(".data").css({transform: 'rotate(-120deg)'})
+        
+        // $("#item1").css({transform: 'scale(1)'})
+        // $("#item2").css({transform: 'scale(1)'})
+        // $("#item3").css({transform: 'scale(1.5) rotate(-120deg)'})
     })
 
     // var ctx = document.getElementById('myChart').getContext('2d');
